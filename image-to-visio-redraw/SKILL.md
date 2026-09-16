@@ -7,7 +7,7 @@ display_name: 图片转 Visio 矢量重绘
 display_name_en: Image to Visio Redraw
 category: document-processing
 version: 1.0.0
-author: WorkBuddy
+author: share-budaozhe
 agent_created: true
 ---
 

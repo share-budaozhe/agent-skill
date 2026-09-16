@@ -76,6 +76,14 @@ cp -r pdf-to-markdown /path/to/your/project/.claude/skills/
 pip install pypdfium2
 ```
 
+`image-to-visio-redraw` 依赖：
+
+- **Microsoft Visio**（Office16，需注册 COM `Visio.Application`）
+- **Windows PowerShell 5.1+**
+- **Python 3**（生成中间 JSON，标准库即可）
+
+> 该 skill 为 Windows 专属，运行时按 SKILL.md 中的工作流调用 `scripts/build_visio.ps1` 生成 `.vsdx`。
+
 ### 4. 使用
 
 重启 Claude Code（或重新加载 skills 列表），然后直接描述需求即可触发，例如：
