@@ -12,6 +12,14 @@ agent-skill/
 │   ├── SKILL.md              # skill 定义与使用说明
 │   └── scripts/
 │       └── extract_text.py   # 核心转换脚本
+├── image-to-visio-redraw/    # 图片转 Visio 矢量重绘的 skill
+│   ├── SKILL.md              # skill 定义与使用说明
+│   ├── references/
+│   │   └── 01-看图拆解方法论.md
+│   └── scripts/
+│       ├── build_visio.ps1   # 生成 vsdx
+│       ├── export_png.ps1    # 导出 PNG 预览
+│       └── template_gen_data.py
 └── README.md                 # 本文件
 ```
 
@@ -20,6 +28,7 @@ agent-skill/
 | 名称 | 说明 |
 |------|------|
 | [pdf-to-markdown](./pdf-to-markdown/SKILL.md) | 将 PDF 批量转换为 Markdown，自动检测文本层，扫描版自动跳过并提示 |
+| [image-to-visio-redraw](./image-to-visio-redraw/SKILL.md) | 把图片（截图/照片/PPT 导出图）里的架构图按内容重绘为原生可编辑的 Visio 矢量图（.vsdx），不贴图、逐元素可编辑 |
 
 ---
 
